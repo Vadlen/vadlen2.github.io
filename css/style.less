@@ -1,0 +1,310 @@
+// main settongs 
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.h2() {
+    color: @h2_text;
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+.p() {
+
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    color: @text-color_gray;
+}
+// bur=ttons settings 
+
+.btn_orange {
+    padding: 1.5rem 6rem;
+    background-color: @orange ;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background-color: darken(@orange, 5%)
+    }
+}
+
+.btn_call {
+    padding: 1rem 3.5rem;
+    background-color: transparent;
+    border: 1px solid #fB2370;
+    color: #fB2370;
+    font-size: 1.6rem;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        color: white;
+        background-color: #fB2370;
+    }
+}
+
+// color setings 
+@main-bg: #fbfbfb;
+@orange: #ff4e2e;
+@text-color_darck: #1f1f24;
+@text-color_gray: #8993ad;
+@h2_text: #262626;
+
+//nain section
+
+.main{
+    
+    background-color: @main-bg;
+    &-header{
+        &-menu {
+            padding: 3rem 0;
+            a {
+                margin: 0 1rem;
+                color: @text-color_darck;
+                font-size: 1.6rem;
+                &:hover{
+                    color: @text-color_darck;
+                    text-decoration: none;
+                }
+                &:focus {
+                    color: #fc557c;
+                    border-bottom: 1px solid fc557c;
+                }
+            }
+        }
+        &_contacts{
+            padding: 2rem 0;
+            a {
+                margin-right: 2.5rem;
+                color: @text-color_darck;
+                font-size: 2.5rem;
+                font-weight: 700;
+                &:hover {
+                    color: @text-color_darck;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &-content {
+        &-text {
+            margin-top: 20rem;
+            margin-bottom: 4.6rem;
+            h1 {
+                font-size: 7rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2.5rem;
+                color:@text-color_gray;
+            }
+        }
+    }
+}
+
+// Work section
+
+.work {
+    margin-top: 10rem;
+    &-header{
+        h2 {
+            .h2();
+            margin-top: 0rem;
+        }
+    }
+    &-content {
+        margin: 9rem 0;
+        &-block {
+            p { 
+                .p();
+            }
+        }
+    }
+}
+
+// Portfolio section
+
+.portfolio {
+    margin-top: 10rem;
+    //sdsda
+    &-header {
+        h2 {
+            .h2();
+        }
+    }
+    .btn_orange {
+        margin-bottom: 5rem;
+    }
+    &-content {
+        margin: 9rem 0;
+        &-block {
+            p {
+                .p();
+            }
+        }
+    }
+}
+
+// Adaptive section 
+
+.adaptive {
+    padding: 8rem 0;
+    margin-top: 8rem;
+    background-color: @orange;
+    &-header {
+        margin-left: 6rem;
+        h3 {
+            color:white;
+            font-size: 4.5rem;
+            font-weight:700;
+        }
+        p {
+            color: #ffff;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// Contacts section
+
+.contacts {
+    padding: 8rem 0;
+    &-menu {
+        a {
+            display: block;
+            font-size: 1.8rem;
+            color: @text-color_gray;
+            &:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+            &:nth-child(3) {
+                margin-top: 1.5rem;
+            }
+            &:hover {
+                text-decoration: none;
+                color: #f82370;
+            }
+        }
+    }
+    &_link {
+        a {
+            display: block;
+            color: @text-color_darck;
+            text-decoration: none;
+            font-size: 2rem;
+            &:nth-child(2) {
+                margin-top: 3rem;
+            }
+            &:hover {
+                color: @text-color_darck;
+                text-decoration: none;
+            }
+        }
+    }
+    .button {
+        display: block;
+    }
+    .social_link {
+        &:nth-child(3) {
+            margin-left: 1.5rem;
+        }
+        &:nth-child(4) {
+            margin-left: 1.5rem;
+        }
+        &:nth-child(5) {
+            margin-left: 1.5rem;
+        }
+    }
+    i {
+        font-size: 2.2rem;
+        margin-top: 3rem;
+        color: @text-color_gray;
+    }
+}
+
+// Section footer
+
+footer {
+    padding: 3.5rem;
+    color:white;
+    font-size: 1.6rem;
+    background-color: #31293c;
+}
+
+@media (max-width: 991px) {
+    .main {
+        
+        &-header {
+            
+            &-menu {
+                
+                text-align: center;
+            }
+            &_contacts {
+                text-align: center;
+                a {
+                    margin-bottom: 5rem;
+                    display: block;
+                }
+            }
+        }
+        &-content {
+            img {
+                margin: 4rem 6rem;
+                border: 3px solid black;
+            }
+            button {
+                margin: 0 22rem;
+            }
+            &-text {
+                text-align: center;
+            }
+        }
+    }
+
+    .work {
+        &-content {
+            
+            &-block {
+                border: 3px solid #f53f4f;
+                padding: 2.5rem;
+                margin-top: 2.5rem;
+                height: 24rem;
+            }
+        }
+    }
+
+    .portfolio {
+        &-content {
+            text-align: center;
+            &-block {
+                margin-top: 3rem;
+                border: 3px solid @orange;
+            }
+        }
+    }
+    
+    .contacts {
+        &-menu {
+            margin-left: 13rem;
+            a {
+                margin: 3rem;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+        &_link {
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .social {
+            button {
+                margin : auto;
+            }
+            text-align: center;
+        }
+    }
+}

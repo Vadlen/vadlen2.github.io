@@ -1,0 +1,235 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+.btn_orange {
+  padding: 1.5rem 6rem;
+  background-color: #ff4e2e;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.btn_orange:focus {
+  outline: none;
+}
+.btn_orange:active {
+  background-color: #ff3815;
+}
+.btn_call {
+  padding: 1rem 3.5rem;
+  background-color: transparent;
+  border: 1px solid #fB2370;
+  color: #fB2370;
+  font-size: 1.6rem;
+}
+.btn_call:focus {
+  outline: none;
+}
+.btn_call:active {
+  color: white;
+  background-color: #fB2370;
+}
+.main {
+  background-color: #fbfbfb;
+}
+.main-header-menu {
+  padding: 3rem 0;
+}
+.main-header-menu a {
+  margin: 0 1rem;
+  color: #1f1f24;
+  font-size: 1.6rem;
+}
+.main-header-menu a:hover {
+  color: #1f1f24;
+  text-decoration: none;
+}
+.main-header-menu a:focus {
+  color: #fc557c;
+  border-bottom: 1px solid fc557c;
+}
+.main-header_contacts {
+  padding: 2rem 0;
+}
+.main-header_contacts a {
+  margin-right: 2.5rem;
+  color: #1f1f24;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.main-header_contacts a:hover {
+  color: #1f1f24;
+  text-decoration: none;
+}
+.main-content-text {
+  margin-top: 20rem;
+  margin-bottom: 4.6rem;
+}
+.main-content-text h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.main-content-text p {
+  font-size: 2.5rem;
+  color: #8993ad;
+}
+.work {
+  margin-top: 10rem;
+}
+.work-header h2 {
+  color: #262626;
+  font-size: 5.4rem;
+  font-weight: 700;
+  margin-top: 0rem;
+}
+.work-content {
+  margin: 9rem 0;
+}
+.work-content-block p {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  color: #8993ad;
+}
+.portfolio {
+  margin-top: 10rem;
+}
+.portfolio-header h2 {
+  color: #262626;
+  font-size: 5.4rem;
+  font-weight: 700;
+}
+.portfolio .btn_orange {
+  margin-bottom: 5rem;
+}
+.portfolio-content {
+  margin: 9rem 0;
+}
+.portfolio-content-block p {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  color: #8993ad;
+}
+.adaptive {
+  padding: 8rem 0;
+  margin-top: 8rem;
+  background-color: #ff4e2e;
+}
+.adaptive-header {
+  margin-left: 6rem;
+}
+.adaptive-header h3 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.adaptive-header p {
+  color: #ffff;
+  font-size: 1.8rem;
+}
+.contacts {
+  padding: 8rem 0;
+}
+.contacts-menu a {
+  display: block;
+  font-size: 1.8rem;
+  color: #8993ad;
+}
+.contacts-menu a:nth-child(2) {
+  margin-top: 1.5rem;
+}
+.contacts-menu a:nth-child(3) {
+  margin-top: 1.5rem;
+}
+.contacts-menu a:hover {
+  text-decoration: none;
+  color: #f82370;
+}
+.contacts_link a {
+  display: block;
+  color: #1f1f24;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.contacts_link a:nth-child(2) {
+  margin-top: 3rem;
+}
+.contacts_link a:hover {
+  color: #1f1f24;
+  text-decoration: none;
+}
+.contacts .button {
+  display: block;
+}
+.contacts .social_link:nth-child(3) {
+  margin-left: 1.5rem;
+}
+.contacts .social_link:nth-child(4) {
+  margin-left: 1.5rem;
+}
+.contacts .social_link:nth-child(5) {
+  margin-left: 1.5rem;
+}
+.contacts i {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  color: #8993ad;
+}
+footer {
+  padding: 3.5rem;
+  color: white;
+  font-size: 1.6rem;
+  background-color: #31293c;
+}
+@media (max-width: 991px) {
+  .main-header-menu {
+    text-align: center;
+  }
+  .main-header_contacts {
+    text-align: center;
+  }
+  .main-header_contacts a {
+    margin-bottom: 5rem;
+    display: block;
+  }
+  .main-content img {
+    margin: 4rem 6rem;
+    border: 3px solid black;
+  }
+  .main-content button {
+    margin: 0 22rem;
+  }
+  .main-content-text {
+    text-align: center;
+  }
+  .work-content-block {
+    border: 3px solid #f53f4f;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    height: 24rem;
+  }
+  .portfolio-content {
+    text-align: center;
+  }
+  .portfolio-content-block {
+    margin-top: 3rem;
+    border: 3px solid #ff4e2e;
+  }
+  .contacts-menu {
+    margin-left: 13rem;
+  }
+  .contacts-menu a {
+    margin: 3rem;
+    text-align: center;
+    display: inline-block;
+  }
+  .contacts_link {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .contacts .social {
+    text-align: center;
+  }
+  .contacts .social button {
+    margin: auto;
+  }
+}
